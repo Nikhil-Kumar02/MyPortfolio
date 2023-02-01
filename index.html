@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>myPortfolio</title>
+  <script src="js/jquery.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" alt="">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Coding Profile</a></li>
+          <li><a href="#portfolio">Certificates</a></a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Hi!</p>
+        <h2><span>Nikhil</span> this side</h2>
+        <h2>Welcome to my Portfolio. </h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p><br> Every person has their own unique story. Here is a glimpse of my story. This website depicts all the works that I have learned and accomplished as a science and engineering student throughout my journey. <br> <br> I'm <strong
+              style="font-size: 20px"> Nikhil Kumar</strong> currently an Undergraduate(UG) student at VIT Vellore pursuing B.Tech in IT field. I was born and raised in Rajasthan, India, where I developed a strong interest in the way tecnology which
+            affects the behavior in society. </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Projects</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li> <span>Programming Languages</span> <br>JAVA <br>C++ <br>SQL <br>C <br>Python </li>
+              <li><span>Web Development</span> <br> HTML <br> CSS <br> JavaScript</li>
+              <li><span>Algorithms</span><br>Data Structures and Algorithms</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Hotel Management System</span><br>In this project we are maintaining the information of customers and employees and checking the condition of rooms like how many rooms are available for customers based on this we update the
+                room availability. Also updating the no. of customer residing inside the hotel on regular basis and deletion of employee data who left the job long time ago.</li>
+              <li><span>Hand Gesture Recognition System</span><br>In this project we first captures the image from the web camera. Then compare that image with the dataset to check whether it is valid hand movement or not. If the hand movement is
+                valid it gives the corresponding output.</li>
+              <li><span>Amazon Review Classification</span><br>In this project we are exploiting the dataset of the amazon reviews by public to find out the quality of product and see on what basis it has given the low rating by the customers.</li>
+              <li><span>Samurai and Kenji Fighting Game</span><br>It is multi-player game like one is enemy and other is soldier. Basically they are fighting for winning the game by reducing the life of opponent.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2020 - Current</span><br>B.Tech from Vellore Institute of Technology, Vellore</li>
+              <li><span>2020</span><br>12 <sup>th</sup> from Star Public School Khairthal</li>
+              <li><span>2018</span><br>10 <sup>th</sup> from Star Public School Khairthal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Services Section -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Coding Profiles</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-user-ninja"></i>
+          <h2>Coding Ninjas</h2>
+          <p>
+          <ul>
+            <li>950+ questions solved</li>
+            <li>Currently on Level 7 (Expert)</li>
+            <li>Earned Certificates</li>
+          </ul>
+          </p>
+          <a href="https://www.codingninjas.com/codestudio/profile/kumar_nikhil" style="color: yellow; font-size: 15px">Check my profile</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-hackerrank"></i>
+          <h2>Hackerrank</h2>
+          <p>
+          <ul>
+            <li>5⭐ coder in JAVA</li>
+            <li>4⭐ coder in C++ and SQL</li>
+            <li>3⭐ coder in C</li>
+            <li>Earned Certificates</li>
+          </ul>
+          </p>
+          <a href="https://www.hackerrank.com/nikhil26052002?hr_r=1" style="color: yellow; font-size: 15px">Check my profile</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Leetcode</h2>
+          <p>
+          <ul>
+            <li>260+ questions solved</li>
+          </ul>
+          </p>
+          <a href="https://leetcode.com/NKumar02/" style="color: yellow; font-size: 15px">Check my profile</a>
+        </div>
+
+        <div>
+          <i class="fa-sharp fa-solid fa-g"></i>
+          <h2>Geeks for Geeks</h2>
+          <p>
+          <ul>
+            <li>200+ questions solved</li>
+          </ul>
+          </p>
+          <a href="https://auth.geeksforgeeks.org/user/nikhil26w1oj" style="color: yellow; font-size: 15px">Check my profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------------------------- Portfolio --------------------- -->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Technical Certificates</h1>
+      <div class="work-list">
+
+        <div class="work">
+          <img src="images/java4.png" alt="">
+          <div class="layer">
+            <h3>Java Basics Certificate</h3>
+            <p>This Certificate I have earned when I completed the given percentage of portion in Java Basics which is mentioned.</p>
+            <a href="https://drive.google.com/file/d/1GniCtKfwWa1z48va5KJpD9wNlcxBI6wQ/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/logoC.png" alt="">
+          <div class="layer">
+            <h3>C++ Certificate</h3>
+            <p>This Certificate I have earned when I completed the given percentage of portion in C++ which is mentioned.</p>
+            <a href="https://drive.google.com/file/d/1vzu14RO_98Be5Cpa8N8xqirYSH40-tNQ/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/jOOPS.png" alt="">
+          <div class="layer">
+            <h3>Java OOPS Certificate</h3>
+            <p>This Certificate I have earned when I completed the given percentage of portion in Java OOPS which is mentioned.</p>
+            <a href="https://drive.google.com/file/d/1h7UnXoZS1kaAzUZj7FnN6wQctkpEWDiO/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/cOOPS.png" alt="">
+          <div class="layer">
+            <h3>C++ OOPS Certificate</h3>
+            <p>This Certificate I have earned when I completed the given percentage of portion in C++ OOPS which is mentioned.</p>
+            <a href="https://drive.google.com/file/d/1XHdAyhBzAOcBuFKF5uYnFU-ELStZOYuv/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/html3.png" alt="">
+          <div class="layer">
+            <h3>HTML Certificate</h3>
+            <p>This Certificate I have earned when I completed the given percentage of portion in HTML which is mentioned.</p>
+            <a href="https://drive.google.com/file/d/1VcIJL4LpUZKPplOBZOWHlxIC3ziNEBHN/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/css.png" alt="">
+          <div class="layer">
+            <h3>CSS Certificate</h3>
+            <p>This Certificate I have earned when I completed the given percentage of portion in CSS which is mentioned.</p>
+            <a href="https://drive.google.com/file/d/1sTYonZfTb4K-PiF8Ma9bd1yQRgOlWeWb/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/apLogo.png" alt="">
+          <div class="layer">
+            <h3>Aptitude Certificate</h3>
+            <p>This Certificate I have earned when I completed Aptitude specified questions which is mentioned.</p>
+            <a href="https://drive.google.com/file/d/1rMH0JDzegM0QJJlVhrk3EsxVl3GidkVD/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/python.png" alt="">
+          <div class="layer">
+            <h3>Python Basics Certificate</h3>
+            <p>This Certificate I have earned when I completed Python Basics specified questions.</p>
+            <a href="https://drive.google.com/file/d/1dPErcc11olMrOGsmQSbGobSlqHhBMFJq/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">Non-Technical Certificates</h1>
+      <div class="work-list">
+
+        <div class="work">
+          <img src="images/vitLogo.png" alt="">
+          <div class="layer">
+            <h3>Some of the certificates from VIT</h3>
+            <p>This will contain some of the certificates that I have earned when I completed the assigned task which is mentioned.</p>
+            <a href="https://drive.google.com/drive/folders/1DkwfsVwSytlbIGuKtpcMwE7f6Gz5ZtsD?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/unStopLogo.png" alt="">
+          <div class="layer">
+            <h3>Some of the certificates from unstop</h3>
+            <p>This will contain some of the certificates that I have earned when I completed the assigned task which is mentioned.</p>
+            <a href="https://drive.google.com/drive/folders/1ObIKHuo-niJMNVR2AxPy4aWcX-Z0OL6a?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/goWinLogo.png" alt="">
+          <div class="layer">
+            <h3>Some of the certificates from goCrackit</h3>
+            <p>This will contain some of the certificates that I have earned when I completed the assigned task which is mentioned.</p>
+            <a href="https://drive.google.com/drive/folders/1FjT3EoUaFGkVlu4IfwV4FJRf5SPDaeh0?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/zunoLogo.png" alt="">
+          <div class="layer">
+            <h3>Some of the certificates from Zuno</h3>
+            <p>This will contain some of the certificates that I have earned when I completed the assigned task which is mentioned.</p>
+            <a href="https://drive.google.com/drive/folders/1tD6QKrL-RIRshTNKAeFdaSnTBjRjBHHx?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+  </div>
+
+
+
+
+  <!-- ---------------------- Contact Me --------------------------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-regular fa-paper-plane"></i> nikhilkumar966029@gmail.com</p>
+          <!-- <p><i class="fa-solid fa-phone"></i> 9876543210</p> -->
+
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100073488378501"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/nikhil_02_kumar/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nikhil-kumar-303ab2210/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <!-- <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a> -->
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright <i class="fa-solid fa-copyright"></i> Nikhil.</p>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+  </form>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzF6yrf13UsaJR0LmmeWX2BIcwerP0XqmPomT-J1e2o9Cy-YS-SKJBDTLGGb0vp2cNSzg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => {
+          msg.innerHTML = "Message is sent successfully."
+          setTimeout(function() {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <!-- <script>
+  function seeMore() {
+    var points = document.getElementById("points");
+    var showMoreText = document.getElementById("moreText");
+    var buttonText = document.getElementById("textButton");
+
+    var showLessText = document.getElementById("lessText");
+
+    // if (points.style.display === "none") {
+      showMoreText.style.display = "none";
+      points.style.display = "inline";
+      showLessText.style.display="inline";
+      // buttonText.innerHTML = "Show More";
+    // }
+
+    // else {
+    //   showMoreText.style.display = "inline";
+    //   points.style.display = "none";
+    //   buttonText.innerHTML = "Show Less";
+    // }
+  }
+</script> -->
+
+</body>
+
+</html>
